@@ -1,4 +1,9 @@
 import pandas as pd
 import streamlit as st
 print("Hello World")
-print("Hello back")
+
+st.write("This is our data app.")
+
+df = pd.read_csv("Film_Locations_in_San_Francisco_20250423.csv")
+
+st.dataframe(df)
